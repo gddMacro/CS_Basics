@@ -9,3 +9,13 @@
 // byte - smallest whole number
 
 
+// DataType variableName = value;
+
+// variable declaration and initialization with explicit type
+int geraltsHealth = 105;
+string spell = "Fireball";
+char guildSymbol = 'G';
+
+// implicit type declaration
+var geraltsStrength = 10;
+
