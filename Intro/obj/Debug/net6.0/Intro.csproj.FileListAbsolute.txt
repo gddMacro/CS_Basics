@@ -1,0 +1,14 @@
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/bin/Debug/net6.0/Intro
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/bin/Debug/net6.0/Intro.deps.json
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/bin/Debug/net6.0/Intro.runtimeconfig.json
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/bin/Debug/net6.0/Intro.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/bin/Debug/net6.0/Intro.pdb
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.AssemblyInfoInputs.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.AssemblyInfo.cs
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.csproj.CoreCompileInputs.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/refint/Intro.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.pdb
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/Intro.genruntimeconfig.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net6.0/ref/Intro.dll
