@@ -21,3 +21,8 @@ var geraltsStrength = 10;
 
 // output to console
 Console.WriteLine("This is the story of Geralt. He belongs to the guild of " + guildSymbol + ".");
+
+// enemy - monster
+int monsterHealth = 80;
+int monsterStrength = 2;
+int monsterAgility = 3;
