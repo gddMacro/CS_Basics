@@ -12,3 +12,4 @@
 /Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net9.0/Intro.pdb
 /Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net9.0/Intro.genruntimeconfig.cache
 /Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net9.0/ref/Intro.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Intro/obj/Debug/net9.0/Intro.sourcelink.json

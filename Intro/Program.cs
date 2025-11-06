@@ -19,3 +19,5 @@ char guildSymbol = 'G';
 // implicit type declaration
 var geraltsStrength = 10;
 
+// output to console
+Console.WriteLine("This is the story of Geralt. He belongs to the guild of " + guildSymbol + ".");
