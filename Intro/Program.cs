@@ -12,6 +12,7 @@
 // DataType variableName = value;
 
 // variable declaration and initialization with explicit type
+
 int geraltsHealth = 105;
 string spell = "Fireball";
 char guildSymbol = 'G';
@@ -38,3 +39,19 @@ monsterHealth -= geraltsStrength;
 Console.WriteLine("Geralt's health: " + geraltsHealth);
 Console.WriteLine("Monster's health: " + monsterHealth);
 
+// Basic control flow
+if (monsterHealth <= 10)
+{
+    if (int.Parse(Console.ReadLine()) != monsterAgility)
+        Console.WriteLine("Missed monster!");
+    else
+        Console.WriteLine("Monster is close to death....");
+}
+else if (monsterHealth <= 20)
+{
+    Console.WriteLine("Monster is not quite dead yet....");
+}
+else
+{
+    Console.WriteLine("....");
+}
