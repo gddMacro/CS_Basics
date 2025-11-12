@@ -72,3 +72,27 @@ while (geraltsHealth > 0) // is being executed until geralt is dead -> hp < 0
     geraltsHealth -= monsterStrength;
     Console.WriteLine($"Geralt is down to {geraltsHealth} hp.");
 }
+
+string sword = "Super Sword";
+string axe = "Ice Axe";
+string bow = "AK47";
+
+// Print all weapons
+Console.WriteLine(sword);
+Console.WriteLine(axe);
+Console.WriteLine(bow);
+
+// Arrays
+string[] weapons = new string[2];
+weapons[1] = "AK-47"; // adding stuff to the slot
+Console.WriteLine(weapons[1]); // looking into the slot to work with the stuff that's in it
+
+weapons[0] = "Golden-Cross-Bow";
+
+
+// for-loop
+// used when number of iterations is clear
+for (int i = 0; i < weapons.Length; i++)
+{
+    Console.WriteLine(weapons[i]);
+}
