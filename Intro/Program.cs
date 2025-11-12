@@ -64,6 +64,10 @@ while (geraltsHealth > 0) // is being executed until geralt is dead -> hp < 0
     Console.WriteLine("Geralt attacks Monster");
     monsterHealth -= geraltsStrength;
     Console.WriteLine($"Monster is down to {monsterHealth} hp.");
+    
+    if (monsterHealth <= 0) // if monster is already slain, break out of loop
+        break; // terminates the loop
+    
     Console.WriteLine("Geralt is being attacked...");
     geraltsHealth -= monsterStrength;
     Console.WriteLine($"Geralt is down to {geraltsHealth} hp.");
