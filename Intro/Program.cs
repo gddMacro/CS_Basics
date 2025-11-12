@@ -47,11 +47,11 @@ if (monsterHealth <= 10)
     else
         Console.WriteLine("Monster is close to death....");
 }
-else if (monsterHealth <= 20)
+else if (monsterHealth <= 20) // is only being evaluated, if the previous condition is not met
 {
     Console.WriteLine("Monster is not quite dead yet....");
 }
-else
+else // fallback, if non has been true
 {
     Console.WriteLine("....");
 }
