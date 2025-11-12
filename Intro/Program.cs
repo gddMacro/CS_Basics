@@ -13,6 +13,8 @@
 
 // variable declaration and initialization with explicit type
 
+using System.Runtime.CompilerServices;
+
 int geraltsHealth = 105;
 string spell = "Fireball";
 char guildSymbol = 'G';
@@ -99,7 +101,7 @@ for (int i = 0; i < weapons.Length; i++)
 
 // Exercise Player count -> player names -> print all player names
 Console.Write("Please enter the # of players joined: ");
-int playerCount = int.Parse(Console.ReadLine()); // determine array size
+int playerCount = GetNumericValueFromString(Console.ReadLine()); // determine array size
 string[] playerNames = new string[playerCount]; // create array with set size
 for (int i = 0; i < playerCount; i++) 
 {
@@ -107,7 +109,24 @@ for (int i = 0; i < playerCount; i++)
     playerNames[i] = Console.ReadLine(); // store current player name
 }
 
-for (int i = 0; i < playerCount; i++) 
+
+// Function call with playerNames array as argument
+PrintPlayerNames(playerNames);
+
+// functions 
+// returnType functionName(datatype parameterName) {..here goes the logic..}
+// Definition
+void PrintPlayerNames(string[] playerNames)
 {
-    Console.WriteLine(playerNames[i]);// print current player name observed
+    foreach (var playerName in playerNames) 
+    {
+        Console.WriteLine(playerName);// print current player name observed
+    }
+}
+
+
+// Function with return type -> getting sth to work with -> minion takes back stuff that can be reused
+int GetNumericValueFromString(string text)
+{
+    return int.Parse(text);
 }
