@@ -13,8 +13,6 @@
 
 // variable declaration and initialization with explicit type
 
-using System.Runtime.CompilerServices;
-
 int geraltsHealth = 105;
 string spell = "Fireball";
 char guildSymbol = 'G';
@@ -99,6 +97,7 @@ for (int i = 0; i < weapons.Length; i++)
     Console.WriteLine(weapons[i]);
 }
 
+
 // Exercise Player count -> player names -> print all player names
 Console.Write("Please enter the # of players joined: ");
 int playerCount = GetNumericValueFromString(Console.ReadLine()); // determine array size
@@ -113,11 +112,10 @@ for (int i = 0; i < playerCount; i++)
 // Function call with playerNames array as argument
 PrintTexts(playerNames);
 
-
 // Exercise array application -> Create, Fill, Read(Print)
 Console.WriteLine("Enter # of texts");
 var textFragmentCount = GetNumericValueFromString(Console.ReadLine());
-var texts = GetStringAarray(textFragmentCount);
+var texts = GetStringArray(textFragmentCount);
 PrintTexts(texts);
 
 
@@ -126,10 +124,8 @@ PrintTexts(texts);
 // Definition
 void PrintTexts(string[] texts)
 {
-    foreach (var playerName in texts)
-    {
-        Console.WriteLine(playerName); // print current player name observed
-    }
+    foreach (var text in texts)
+        Console.WriteLine(text); // print current player name observed
 }
 
 
@@ -143,7 +139,7 @@ int GetNumericValueFromString(string text)
 // create a method for generating a string array of a certain size 
 // Create a method to print all entries of this or any similar array
 
-string[] GetStringAarray(int size)
+string[] GetStringArray(int size)
 {
     string[] texts = new string[size]; // Create array of type string with # of elements 
     FillStringArray(texts); // Call method to assign actual value to each slot
@@ -158,4 +154,3 @@ void FillStringArray(string[] stringArray)
         stringArray[i] = Console.ReadLine(); // Store actual value in current slot
     }
 }
-
