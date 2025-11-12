@@ -55,3 +55,16 @@ else // fallback, if non has been true
 {
     Console.WriteLine("....");
 }
+
+// Loops 
+// Is being used, if number of iterations is uncertain
+while (geraltsHealth > 0) // is being executed until geralt is dead -> hp < 0
+{
+    // Battle simulation
+    Console.WriteLine("Geralt attacks Monster");
+    monsterHealth -= geraltsStrength;
+    Console.WriteLine($"Monster is down to {monsterHealth} hp.");
+    Console.WriteLine("Geralt is being attacked...");
+    geraltsHealth -= monsterStrength;
+    Console.WriteLine($"Geralt is down to {geraltsHealth} hp.");
+}
