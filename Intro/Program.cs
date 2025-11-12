@@ -96,3 +96,18 @@ for (int i = 0; i < weapons.Length; i++)
 {
     Console.WriteLine(weapons[i]);
 }
+
+// Exercise Player count -> player names -> print all player names
+Console.Write("Please enter the # of players joined: ");
+int playerCount = int.Parse(Console.ReadLine()); // determine array size
+string[] playerNames = new string[playerCount]; // create array with set size
+for (int i = 0; i < playerCount; i++) 
+{
+    Console.WriteLine("Please enter the name of the player: ");
+    playerNames[i] = Console.ReadLine(); // store current player name
+}
+
+for (int i = 0; i < playerCount; i++) 
+{
+    Console.WriteLine(playerNames[i]);// print current player name observed
+}
