@@ -10,6 +10,8 @@ string[] unitNames = new [] { "Ice", "Fire", "Earth" };
 int[] unitHealthPoints = new[] { 100, 90, 200 };
 int[] unitDamagePoints = new[] { 12, 22, 30 };
 
-
+// Resources
+string[] resourceNames = new[] { "Iron", "Gold", "Wood" };
+int[] resourceAmounts = new[] { 0, 0, 0 };
 
 
