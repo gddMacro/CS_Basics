@@ -7,11 +7,11 @@
 
 // Unit description 
 
-string[] unitNames = new[] { "Ice", "Fire", "Earth" };
-int[] unitHealthPoints = new[] { 100, 90, 200 };
-int[] unitDamagePoints = new[] { 12, 22, 30 };
+string[] unitNames = new[] { "Ice", "Fire", "Earth", "Water", "Air" };
+int[] unitHealthPoints = new[] { 100, 90, 200, 1200, 900 };
+int[] unitDamagePoints = new[] { 12, 22, 30, 100, 127 };
 
-// Resources
+// Resources.
 string[] resourceNames = new[] { "Iron", "Gold", "Wood" };
 int[] resourceAmounts = new[] { 0, 0, 0 };
 
@@ -32,8 +32,14 @@ if (max < 0 || max <= min) // select 1 unit only, if chosen by the player
         $"Unit {min}: {unitNames[min - 1]} has {unitHealthPoints[min - 1]}hp and makes {unitDamagePoints[min - 1]} damage.");
 else
 {
-    var indexRange = (max - min) + 1; // calculate complete selected range to iterate over
-    for (var i = 0; i < indexRange; i++)
-        Console.WriteLine(
-            $"Unit {i + 1}: {unitNames[i]} has {unitHealthPoints[i]}hp and makes {unitDamagePoints[i]} damage.");
+    // 3        -        6
+    // Bums, Bams, Bims , Böms, Bummel, Wummel, Fummel
+    var indexRange = (max - min); // calculate complete selected range to iterate over
+    var calculatedEnd = min + indexRange;
+    if (calculatedEnd <= unitNames.Length)
+    {
+        for (var i = min - 1; i < calculatedEnd; i++)
+            Console.WriteLine(
+                $"Unit {i + 1}: {unitNames[i]} has {unitHealthPoints[i]}hp and makes {unitDamagePoints[i]} damage.");
+    }
 }
