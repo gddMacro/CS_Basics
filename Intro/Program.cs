@@ -4,3 +4,12 @@
 // This unit is then entering the battle field. within the battle realm you have the opportunity to decide what
 // units are screening the battle field for ressources and which are supposed to fight.
 
+
+// Unit description 
+string[] unitNames = new [] { "Ice", "Fire", "Earth" };
+int[] unitHealthPoints = new[] { 100, 90, 200 };
+int[] unitDamagePoints = new[] { 12, 22, 30 };
+
+
+
+
