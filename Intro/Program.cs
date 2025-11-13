@@ -25,3 +25,15 @@ var min = int.Parse(Console.ReadLine()); // determine where to start selection
 Console.WriteLine("Enter your last unit you want to select. Type -1, if you just want to select a single unit");
 var max = int.Parse(Console.ReadLine()); // determine where to stop unit selection
 
+// Very basic unit selection that does NOT consider edge cases like invalid indices.
+Console.WriteLine("You have selected the following unit/s:");
+if (max < 0 || max <= min) // select 1 unit only, if chosen by the player
+    Console.WriteLine(
+        $"Unit {min}: {unitNames[min - 1]} has {unitHealthPoints[min - 1]}hp and makes {unitDamagePoints[min - 1]} damage.");
+else
+{
+    var indexRange = (max - min) + 1; // calculate complete selected range to iterate over
+    for (var i = 0; i < indexRange; i++)
+        Console.WriteLine(
+            $"Unit {i + 1}: {unitNames[i]} has {unitHealthPoints[i]}hp and makes {unitDamagePoints[i]} damage.");
+}
