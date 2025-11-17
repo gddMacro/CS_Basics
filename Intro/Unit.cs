@@ -6,10 +6,12 @@ public class Unit
     // state - implementation detail
     private string name;
     private int healthPoints;
-    private int damagePoints;
+    
+    // introducing properties
+    public int DamagePoints { get; set; }
 
     // behavior - public interface
-    
+
     // Setter methods
     public void SetName(string name)
     {
@@ -18,14 +20,20 @@ public class Unit
             this.name = name;
     }
 
+    public void SetHealth(int health)
+    {
+        // Ternary operator
+        this.healthPoints = (health < 0) ? 0 : health;
+    }
+
     // Getter methods
     public string GetName()
     {
         return this.name;
     }
 
-    public string GetDetails()
+    public int GetHealth()
     {
-        return $"{this.name} has {this.healthPoints} HP and {this.damagePoints} damage points.";
+        return this.healthPoints;
     }
 }

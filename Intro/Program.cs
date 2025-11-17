@@ -16,7 +16,6 @@ int[] unitDamagePoints = new[] { 12, 22, 30, 100, 127 };
 Unit[] units = new Unit[5];
 units[0] = new Unit();
 units[0].SetName("lkasjdljashdl");
-Console.WriteLine(units[0].GetDetails());
 
 // Resources.
 string[] resourceNames = new[] { "Iron", "Gold", "Wood" };
