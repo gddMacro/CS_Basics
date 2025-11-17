@@ -12,11 +12,11 @@ using Intro;
 // Creating a bucket full of units where each unit has a name, health points and damage points.   
 var units = new[]
 {
-    new Unit { Name = "Ice", HealthPoints = 120, DamagePoints = 12 },
-    new Unit { Name = "Fire", HealthPoints = 90, DamagePoints = 22 },
-    new Unit { Name = "Earth", HealthPoints = 200, DamagePoints = 30 },
-    new Unit { Name = "Water", HealthPoints = 1200, DamagePoints = 100 },
-    new Unit { Name = "Air", HealthPoints = 900, DamagePoints = 127 }
+    new Unit(120) { Name = "Ice", DamagePoints = 12 },
+    new Unit(90) { Name = "Fire", DamagePoints = 22 },
+    new Unit(200) { Name = "Earth", DamagePoints = 30 },
+    new Unit(1200) { Name = "Water", DamagePoints = 100 },
+    new Unit(900) { Name = "Air", DamagePoints = 127 }
 };
 
 // Resources.
@@ -37,7 +37,7 @@ var max = int.Parse(Console.ReadLine()); // determine where to stop unit selecti
 Console.WriteLine("You have selected the following unit/s:");
 if (max < 0 || max <= min) // select 1 unit only, if chosen by the player
     Console.WriteLine(
-        $"Unit {min}: {units[min - 1].Name} has {units[min - 1].HealthPoints}hp and makes {units[min - 1].DamagePoints} damage.");
+        $"Unit {min}: {units[min - 1].Name} has {units[min - 1].GetHealth}hp and makes {units[min - 1].DamagePoints} damage.");
 else
 {
     // 3        -        6
@@ -53,7 +53,7 @@ else
         {
             var currentUnit = units[i];
             Console.WriteLine(
-                $"Unit {i + 1}: {currentUnit.Name} has {currentUnit.HealthPoints}hp and makes {currentUnit.DamagePoints} damage.");
+                $"Unit {i + 1}: {currentUnit.Name} has {currentUnit.GetHealth}hp and makes {currentUnit.DamagePoints} damage.");
         }
     }
 }
