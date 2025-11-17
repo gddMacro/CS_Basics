@@ -25,6 +25,6 @@ public class Unit
     {
         var incomingDamage = rawDamage - this.Armor;
         if (incomingDamage < 0) return;
-        this.healthPoints = 120;
+        this.healthPoints -= incomingDamage;
     }
 }
