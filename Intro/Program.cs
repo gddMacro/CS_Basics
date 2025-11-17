@@ -12,11 +12,11 @@ using Intro;
 // Creating a bucket full of units where each unit has a name, health points and damage points.   
 var units = new[]
 {
-    new Unit(120) { Name = "Ice", DamagePoints = 12 },
-    new Unit(90) { Name = "Fire", DamagePoints = 22 },
-    new Unit(200) { Name = "Earth", DamagePoints = 30 },
-    new Unit(1200) { Name = "Water", DamagePoints = 100 },
-    new Unit(900) { Name = "Air", DamagePoints = 127 }
+    new Unit(120) { Name = "Ice", DamagePoints = 12, Armor = 12},
+    new Unit(90) { Name = "Fire", DamagePoints = 22, Armor = 12},
+    new Unit(200) { Name = "Earth", DamagePoints = 30, Armor = 12},
+    new Unit(1200) { Name = "Water", DamagePoints = 100, Armor = 12},
+    new Unit(900) { Name = "Air", DamagePoints = 127, Armor = 12}
 };
 
 // Resources.
