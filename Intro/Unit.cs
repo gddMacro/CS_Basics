@@ -5,7 +5,6 @@ public class Unit
 {
     public string Name { get; set; }
     public int DamagePoints { get; set; }
-
     public int Armor { get; init; }
 
     // Property to read healthpoints only - no write

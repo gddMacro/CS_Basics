@@ -1,0 +1,15 @@
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/bin/Debug/net9.0/Simple_Crafting
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/bin/Debug/net9.0/Simple_Crafting.deps.json
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/bin/Debug/net9.0/Simple_Crafting.runtimeconfig.json
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/bin/Debug/net9.0/Simple_Crafting.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/bin/Debug/net9.0/Simple_Crafting.pdb
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.AssemblyInfoInputs.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.AssemblyInfo.cs
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.csproj.CoreCompileInputs.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.sourcelink.json
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/refint/Simple_Crafting.dll
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.pdb
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/Simple_Crafting.genruntimeconfig.cache
+/Users/mhille/_Development/C#/macrpmedia/MM_CS_101/Simple_Crafting/obj/Debug/net9.0/ref/Simple_Crafting.dll
