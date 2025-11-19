@@ -18,7 +18,11 @@ class Program
     {
          // STEP 1: Set up our storage warehouse with 1000 empty slots
          // This is like opening a brand new storage building before we can put anything in it!
-         ResourceManagementSystem.Init(1000);
+         ResourceManagementSystem.Init(10);
+         
+         ResourceManagementSystem.Add("Iron", 10);
+         ResourceManagementSystem.Add("Gold", 10);
+         ResourceManagementSystem.Add("Iron", 3);
 
          // STEP 2: Check if we have at least 100 Iron in our storage
          // We save the answer (true or false) in a variable called "isIronInStorage"

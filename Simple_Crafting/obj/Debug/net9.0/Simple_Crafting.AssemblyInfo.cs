@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Simple_Crafting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80b257388015dbdee8bf3f07e80f8b95dfa3944c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffe1d5094ca03c3007f9a4d8b1211b8f56b9def1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Simple_Crafting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Simple_Crafting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

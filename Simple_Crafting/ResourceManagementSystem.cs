@@ -44,5 +44,48 @@ public static class ResourceManagementSystem
         // So we return "false" to say "Sorry, we don't have enough of that resource."
         return false;
     }
+
+    // This method ADDS resources to our storage warehouse!
+    // 
+    // WHAT it does: It either adds MORE to an existing resource, or creates a NEW resource if we don't have it yet.
+    // For example: If we already have 10 Iron and we Add("Iron", 5), we'll end up with 15 Iron total!
+    //
+    // WHY we use it: When players collect resources in the game (like mining iron or chopping trees),
+    // we need to update our storage to remember what they found!
+    //
+    // WHEN we use it: Every time the player picks up or earns a resource!
+    // - When mining rocks for iron
+    // - When chopping trees for wood
+    // - When winning gold from a quest
+    // - When buying materials from a shop
+    public static void Add(string name, int amount)
+    {
+        // This loop looks through EVERY slot in our storage warehouse, one by one.
+        // We use "i" as a counter to keep track of which slot number we're checking (0, 1, 2, 3...)
+        for (var i = 0; i < resources.Length; i++)
+        {
+            // This checks TWO things: Is this slot filled (not null)? AND Is it the resource we're looking for?
+            // If BOTH are true, it means we ALREADY HAVE this resource stored, so we should add to it!
+            if (resources[i] != null && resources[i].Name.Equals(name))
+            {
+                // We found the resource! Now ADD the new amount to what we already have.
+                // The "+=" means "add to the existing amount". If we had 10 and add 5, we now have 15!
+                resources[i].Amount += amount;
+                // Stop here and exit the method! We're done - we added to the existing resource!
+                return;
+            }
+
+            // This checks if the current slot is EMPTY (null means nothing is stored there).
+            // If it's empty AND we didn't find the resource above, this must be a NEW resource type!
+            if (resources[i] == null)
+            {
+                // Create a BRAND NEW resource and put it in this empty slot!
+                // It's like putting a new labeled box in the warehouse with the name and starting amount.
+                resources[i] = new Resource { Name = name, Amount = amount };
+                // Stop here and exit the method! We're done - we created a new resource!
+                return;
+            }
+        }
+    }
     
 }
